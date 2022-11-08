@@ -1,16 +1,17 @@
 # Incident Runbook
 
 ## Table of Contents
-[1. Introduction](##-1.-Introduction) 
-[2. Detection](##-2.-Detection) 
-[3. Containment](##-3.-Containment) 
-[3.1 Basic commands](##-3.1-Basic-commands) 
-[3.2 Status Meeting #1](##-3.2-Status-Meeting) 
-[4. Analysis](##-4.-Analysis) 
-[4.1 Status Meeting #2](##-4.1-Status-Meeting) 
-[5. Remediation](##-5.-Remediation) 
-[5.1 Basic commands](##-5.1-Basic-commands) 
-[6. Closing](##-6.-Closing) 
+- [1. Introduction](https://github.com/redar0n/incident-runbook/blob/main/incident-runbook.md#1-introduction)
+- [2. Detection](https://github.com/redar0n/incident-runbook/blob/main/incident-runbook.md#2-detection)
+- [3. Containment](https://github.com/redar0n/incident-runbook/blob/main/incident-runbook.md#3-containment)
+	- [3.1 Basic commands](https://github.com/redar0n/incident-runbook/blob/main/incident-runbook.md#31basic-commands) 
+	- [3.2 Status Meeting #1](https://github.com/redar0n/incident-runbook/blob/main/incident-runbook.md#32status-meeting-1) 
+- [4. Analysis](https://github.com/redar0n/incident-runbook/blob/main/incident-runbook.md#4-analysis) 
+	- [4.1 Status Meeting #2](https://github.com/redar0n/incident-runbook/blob/main/incident-runbook.md#41status-meeting-2) 
+- [5. Remediation](https://github.com/redar0n/incident-runbook/blob/main/incident-runbook.md#5-remediation)
+	- [5.1 Basic commands](https://github.com/redar0n/incident-runbook/blob/main/incident-runbook.md#51basic-commands) 
+- [6. Closing](https://github.com/redar0n/incident-runbook/blob/main/incident-runbook.md#6-closing) 
+
 
 ## 1. Introduction
 | Value | Description |
@@ -37,45 +38,51 @@ Get the Detection Phase done within the first 10 Minutes of the Incident!
 | If it internal, which team is affected / required for support | |
 | Who is responsible for customer communication? | |
 | Keep the Teams / Slack channel up to date and always in loop | |
+| Status meetings interval: 2-4 hours | |
+
 
 
 ## 3. Containment
 ### 3.1	Basic commands
 Endpoint Security | XDR
+```c
 // commands
 Search for all logged Actions on Endpoint
 File Search for "Hash Value"
 Live Terminal
-
+```
 Firewall
+```c
 // commands
 Traffic Logs
 URL Filtering
 VPN End to Site connections
 VPN Side to Site connections
-
+```
 Active Directory
-// Source
-Active Roles / Domain Controller
+```c
 View Users Details
 View Group Details
 Last Password Change
-
+```
 Azure Active Directory
+```c
 // Source 
 Azure Portal / Microsoft Security Center / Azure Active Directory / Conditional Access
-
 Check last Logins 
 MFA Status
 Check Conditional Access Status
+```
 
 Asset Database
+```c
 Last users
 OS Information
 IP Range
 Endpoint Security Status
 installed Software
 Disks / File Shares
+```
 
 Linux
 ```c
@@ -280,7 +287,7 @@ PS C:\> Get-Content $env:systemroot\system32\LogFiles\Firewall\firewall.log
 In the case of major incidents, it makes sense to hold regular meetings. To ensure that tasks can be processed, an interval of 2-4 hours is recommended.
 
 
-## 4. Analysis <a name="4.-Analysis"></a>
+## 4. Analysis
 | Task | Status (Open / Done) | Yes / No / Unknown / N/A | comment |
 | --- | --- | --- | --- |
 
@@ -339,32 +346,37 @@ In the case of major incidents, it makes sense to hold regular meetings. To ensu
 ### 5.1	Basic commands
 
 Endpoint Security | XDR
+```c
 // commands
 Isolate Endpoint
 Block Files
 Search for actions on Endpoint
 initiated live terminal connection
 remove malicous files
+```
 
 Firewall
+```c
 //commands
 Block IPs
 Block Ports
 Block applications
 Report malicous sites to Firewall manufacturer
-
+```
 Active Directory
-
+```c
 disable Users
 disable Groups
 change Password
+```
 
 Azure Active Directory
+```c
 // Source 
 Azure Portal / Azure Active Directory
-
 Reset Password
 Revoke active Sessions (Permission "Authentication Administrator" needed)
+```
 
 Linux
 ```c
