@@ -16,7 +16,6 @@
 ## 1. Introduction
 | Value | Description |
 | --- | --- |
-| Value | Description |
 | Title | Incident Runbook |
 | Date | Nov 2022 |
 | initial created by | [0xsyr0](https://github.com/0xsyr0) |
