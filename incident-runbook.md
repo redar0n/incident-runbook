@@ -26,6 +26,7 @@
 Get the Detection Phase done within the first 10 Minutes of the Incident!
 | Task | Status (Open / Done) |
 | --- | --- |
+| If no ticket exists yet, create one for traceability / documentation | |
 | Start a Teams / Slack Channel for the Incident Response team (Incident-$number) | |
 | Setup a Teams / Slack meeting and provide the meeting link within the channel | |
 | Start the status meeting and write down all relevant information in the channel | |
