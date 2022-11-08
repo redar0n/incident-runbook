@@ -19,8 +19,8 @@
 | Value | Description |
 | Title | Incident Runbook |
 | Date | Nov 2022 |
-| created by | 0xsyr0 |
-| modified by | redar0n |
+| initial created by | [0xsyr0](https://github.com/0xsyr0) |
+| revised by | [redar0n](https://github.com/redar0n) |
 
 
 ## 2. Detection
@@ -51,6 +51,7 @@ Search for all logged Actions on Endpoint
 File Search for "Hash Value"
 Live Terminal
 ```
+
 Firewall
 ```c
 // commands
@@ -59,12 +60,14 @@ URL Filtering
 VPN End to Site connections
 VPN Side to Site connections
 ```
+
 Active Directory
 ```c
 View Users Details
 View Group Details
 Last Password Change
 ```
+
 Azure Active Directory
 ```c
 // Source 
