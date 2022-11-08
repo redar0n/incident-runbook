@@ -46,7 +46,6 @@ Get the Detection Phase done within the first 10 Minutes of the Incident!
 ### 3.1	Basic commands
 Endpoint Security | XDR
 ```c
-// commands
 Search for all logged Actions on Endpoint
 File Search for "Hash Value"
 Live Terminal
@@ -54,7 +53,6 @@ Live Terminal
 
 Firewall
 ```c
-// commands
 Traffic Logs
 URL Filtering
 VPN End to Site connections
@@ -72,9 +70,12 @@ Azure Active Directory
 ```c
 // Source 
 Azure Portal / Microsoft Security Center / Azure Active Directory / Conditional Access
+
 Check last Logins 
+Check last login locations
 MFA Status
 Check Conditional Access Status
+
 ```
 
 Asset Database
@@ -350,17 +351,15 @@ In the case of major incidents, it makes sense to hold regular meetings. To ensu
 
 Endpoint Security | XDR
 ```c
-// commands
 Isolate Endpoint
 Block Files
 Search for actions on Endpoint
-initiated live terminal connection
+initiate live terminal connections
 remove malicous files
 ```
 
 Firewall
 ```c
-//commands
 Block IPs
 Block Ports
 Block applications
@@ -377,6 +376,7 @@ Azure Active Directory
 ```c
 // Source 
 Azure Portal / Azure Active Directory
+
 Reset Password
 Revoke active Sessions (Permission "Authentication Administrator" needed)
 ```
